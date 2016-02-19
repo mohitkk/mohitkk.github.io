@@ -3,48 +3,55 @@
 	<title>Mohit's</title>
 	
 	<style>
-	h1   {color:blue;}	
+	body{
+		overflow:hidden;
+	}
+	h3 {color:black;
+	margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;}	
 	p    {color:green;}
 	.leftdiv {
-	 /*background-color:lightgrey;*/
-	/*background:transparent url('/images/img1.png') repeat center top;*/
-	/*background-color: #006100;*/
-	background-image:url("images/img1.jpg");
     position: absolute;
     font-size: 18px;
     left: 0%;
     top: 0%;
-    width: 80%;
-    height: 80%;
-	}
-	.blockedarea {
-    width: 80%;
-    height: 80%;
-	}
-	.blockeddown {
-   	position: absolute;
-    font-size: 18px;
-    left: 0%;
-    top: 80%;
-    width: 80%;
-    height: 20%;
-	}
-	.blockedright {
-    position: absolute;
-    font-size: 18px;
-    left: 80%;
-    top: 0%;
-    width: 20%;
+    width: 50%;
     height: 100%;
 	}
-	.rightdiv {
-	
-	background-image: url("http://www.transparenttextures.com/patterns/45-degree-fabric-light.png")
-    position: absolute;
+		
+	.superimposedleft{
+		position: absolute;
     font-size: 18px;
-    left: 0%;
+	left: 0%;
+    top: 5%;
+    width: 25%;
+    height: 50%;		
+	}
+	.bodydiv{
+	left: 0%;
     top: 0%;
     width: 100%;
+    height: 100%;
+	}
+	h6 {
+	color:black;
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+	}
+	.heightSet {
+    	max-height: 100%;
+    	/*max-width: 50%;*/
+	}
+	.newright{
+	left: 60%;
+    top: 0%;
+    width: 40%;
     height: 100%;
 	}
 	</style> 
@@ -52,36 +59,24 @@
 	<body>
 	
 	<div class="bodydiv">
-		<div class="leftdiv">
-		</div>
-		<div class="rightdiv">
-			<div class="blockedarea"></div>
-			<div class="blockeddown">
-			<center><h1>Mohit Kumar</h1><h3>Software Developer</h3></center>
-			</div>
-			<div class="blockedright"></div>
 		
+		<div class="leftdiv">
+			<img  src="images/img1.jpg" class="heightSet" >
+			<!-- <img class="leftimgdiv" src="images/img1.jpg" style="width:100%; height:100%;" > -->
+		</div>
+		<div class ="superimposedleft">
+			<center><h3>Mohit Kumar</h3><h6>Software Developer</h6></center>
+			<center><a target="_blank" href="https://twitter.com/mohitkkhullar"><img title="" alt="Twitter" src="images/github.png" width="35" height="35" /></a></center>
+			<center><a target="_blank" href="https://twitter.com/mohitkkhullar"><img title="" alt="Twitter" src="images/linekedin.png" width="35" height="35" /></a></center>
+			<center><a target="_blank" href="https://twitter.com/mohitkkhullar"><img title="" alt="Twitter" src="images/twitter.png" width="35" height="35" /></a></center>
+			<center><a target="_blank" href="https://twitter.com/mohitkkhullar"><img title="" alt="Twitter" src="images/facebook.png" width="35" height="35" /></a></center>
 
-		<div class="Skills">
 		</div>
-		<div class="Interests">
+
+		<div class="newright">
+			<!-- <h3>Skillsnew</h3> -->
 		</div>
-		<div class="Contactinfo">
-		</div>
-		<div class="WorkExperience">
-		</div>
-		<div class="SocialMedia">
-		</div>
-		<div class="DropLine">
-			<!-- <a href = 'mailto:mohitkhullar@live?body="Yourbody"&subject="a subject".com'>SEND EMAIL TO mohitkhullar@live.com</a> -->
-		</div>
-		<div class="">
-		</div>
-		<div class="">
-		</div>
-		<div class="">
-		</div>
-		<div>
+		
 	</div>
 	</body>
 </html>
