@@ -59,14 +59,54 @@
 			<center><h2>Mohit Kumar</h2>
 			<h4>Software Developer</h4></center>
 
-			<center><a target="_blank" href="https://github.com/mohitkk" ><img title="" src="images/github.png" width="35" height="35" /></a></center>
-			<center><a target="_blank" href="https://www.linkedin.com/in/mohitkk"  ><img title="" src="images/linekedin.png" width="35" height="35"  /></a></center>
-			<center><a target="_blank" href="https://twitter.com/mohitkkhullar" ><img title="" src="images/twitter.png" width="35" height="35" /></a></center>
-			<center><a target="_blank" href="https://www.facebook.com/iammohitkhullar" ><img title="" src="images/facebook.png" width="35" height="35" /></a></center>
+			<center><a target="_blank" href="https://github.com/mohitkk" ><img id="img1" title="" src="images/github.png" width="35" height="35" onmouseenter="mouseEnter(1)" onmouseleave="mouseLeave(1)" /></a></center>
+			<center><a target="_blank" href="https://www.linkedin.com/in/mohitkk"  ><img id="img2" title="" src="images/linekedin.png" width="35" height="35"  onmouseenter="mouseEnter(2)" onmouseleave="mouseLeave(2)" /></a></center>
+			<center><a target="_blank" href="https://twitter.com/mohitkkhullar" ><img id="img3" title="" src="images/twitter.png" width="35" height="35" onmouseenter="mouseEnter(3)" onmouseleave="mouseLeave(3)" /></a></center>
+			<center><a target="_blank" href="https://www.facebook.com/iammohitkhullar" ><img id="img4" title="" src="images/facebook.png" width="35" height="35"  onmouseenter="mouseEnter(4)" onmouseleave="mouseLeave(4)"/></a></center>
 
 		</div>
 		
+	<script type="text/javascript">
+
+	function mouseEnter(img){
+
+		if(img == 1){
+			document.getElementById("img1").width = "50";
+			document.getElementById("img1").height = "50";
+		}
+		if(img == 2){
+			document.getElementById("img2").width = "50";
+			document.getElementById("img2").height = "50";
+		}
+		if(img == 3){
+			document.getElementById("img3").width = "50";
+			document.getElementById("img3").height = "50";
+		}
+		if(img == 4){
+			document.getElementById("img4").width = "50";
+			document.getElementById("img4").height = "50";
+		}
+	}
+	function mouseLeave(img){
+		if(img == 1){
+			document.getElementById("img1").width = "35";
+			document.getElementById("img1").height = "35";
+		}
+		if(img == 2){
+			document.getElementById("img2").width = "35";
+			document.getElementById("img2").height = "35";
+		}
+		if(img == 3){
+			document.getElementById("img3").width = "35";
+			document.getElementById("img3").height = "35";
+		}
+		if(img == 4){
+			document.getElementById("img4").width = "35";
+			document.getElementById("img4").height = "35";
+		}
+	}
 	
+	</script>
 		
 
 	
