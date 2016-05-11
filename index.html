@@ -25,6 +25,14 @@
     font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
     font-weight: 700;
     letter-spacing: 5px;
+	}
+	h6 {
+	color:white;
+    margin: 0 0 10px;
+    text-transform: lowercase;
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
 	}	
 	p{
 	color:white;
@@ -58,11 +66,14 @@
 		<div class ="superimposedleft">
 			<center><h2>Mohit Kumar</h2>
 			<h4>Software Developer</h4></center>
-
+			
+			
 			<center><a target="_blank" href="https://github.com/mohitkk" ><img id="img1" title="" src="images/github_35.png" width="35" height="35" onmouseenter="mouseEnter(1)" onmouseleave="mouseLeave(1)" /></a></center>
+			<center><a target="_blank" alt="Resume" title="Resume" href="pdfs/Resume_Mohit_Kumar.pdf"><img id="img5" title="" src="images/resume_35.png" width="35" height="35" onmouseenter="mouseEnter(5)" onmouseleave="mouseLeave(5)" /></a></center>
 			<center><a target="_blank" href="https://www.linkedin.com/in/mohitkk"  ><img id="img2" title="" src="images/linekedin_35.png" width="35" height="35"  onmouseenter="mouseEnter(2)" onmouseleave="mouseLeave(2)" /></a></center>
 			<center><a target="_blank" href="https://twitter.com/mohitkkhullar" ><img id="img3" title="" src="images/twitter_35.png" width="35" height="35" onmouseenter="mouseEnter(3)" onmouseleave="mouseLeave(3)" /></a></center>
 		<!--	<center><a target="_blank" href="https://www.facebook.com/iammohitkhullar" ><img id="img4" title="" src="images/facebook_35.png" width="35" height="35"  onmouseenter="mouseEnter(4)" onmouseleave="mouseLeave(4)"/></a></center> -->
+		
 
 		</div>
 		
@@ -89,6 +100,11 @@
 			document.getElementById("img4").width = "50";
 			document.getElementById("img4").height = "50";
 		}
+		if(img == 5){
+			document.getElementById("img5").src="images/resume_50.png"
+			document.getElementById("img5").width = "50";
+			document.getElementById("img5").height = "50";
+		}
 		
 	}
 	function mouseLeave(img){
@@ -111,6 +127,11 @@
 			document.getElementById("img4").src="images/facebook_35.png"
 			document.getElementById("img4").width = "35";
 			document.getElementById("img4").height = "35";
+		}
+		if(img == 5){
+			document.getElementById("img5").src="images/resume_35.png"
+			document.getElementById("img5").width = "35";
+			document.getElementById("img5").height = "35";
 		}
 
 	}
